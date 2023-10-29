@@ -27,8 +27,8 @@ const mode = process.env.NODE_ENV || 'development'
 const moz = process.env.MOZ
 module.exports = {
   entry: {
-    app: ['./src/app/index.js'],
-    background: ['./src/background/index.js'],
+    app: ["regenerator-runtime/runtime.js",'./src/app/index.js'],
+    background: ["regenerator-runtime/runtime.js",'./src/background/index.js'],
     content: './src/content.js',
     exchanger: './src/exchanger.js',
   },

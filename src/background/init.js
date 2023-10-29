@@ -14,6 +14,9 @@ import {updateBrowserAction} from './browserAction'
 
 import browser from 'webextension-polyfill'
 
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
 /* eslint-disable-next-line */
 if (DEBUG && !MOZ) import(
   /* webpackChunkName: "autoreload", webpackMode: "lazy" */
